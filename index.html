@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrame al 100%</title>
+    <style>
+        /* Estilos para el contenedor del iframe */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%; /* Para asegurar que el body ocupe el 100% de la altura */
+        }
+
+        #iframe-container {
+            position: relative; /* Para establecer un contenedor relativo */
+            width: 100%; /* Ocupa el 100% del ancho */
+            height: 100%; /* Ocupa el 100% de la altura */
+        }
+
+        #frame {
+            position: absolute; /* Posicionamiento absoluto para el iframe */
+            top: 0; /* Al inicio del contenedor */
+            left: 0; /* A la izquierda del contenedor */
+            width: 100%; /* 100% del ancho */
+            height: 115%; /* 100% de la altura */
+            border: none; /* Sin borde para el iframe */
+        }
+    </style>
+</head>
+<body>
+
+<div id="iframe-container">
+    <iframe src="https://documind.chat/dashboard/sharing/2f7203e0e62e93aa383c0ed4835425f3" title="Soporte 1" id="frame"></iframe>
+</div>
+
+</body>
+</html>
